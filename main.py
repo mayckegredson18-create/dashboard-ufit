@@ -35,7 +35,7 @@ HTML_DASHBOARD = """
             <p>{{ total }}</p>
         </div>
         <div class="card">
-            <h3>Última Atualização</h3>
+            <h3>Ultima Atualizacao</h3>
             <p style="font-size: 18px;">{{ ultima }}</p>
         </div>
     </div>
@@ -66,5 +66,5 @@ def webhook():
     return "OK", 200
 
 if __name__ == "__main__":
-    port = int(os.environ.get("PORT", 8000))
+    port = int(os.environ.get("PORT", 8080))
     app.run(host='0.0.0.0', port=port)
